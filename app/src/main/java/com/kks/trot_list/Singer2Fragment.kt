@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.kks.trot_list.databinding.FragmentSinger2Binding
 
 class Singer2Fragment : Fragment() {
@@ -29,6 +30,12 @@ class Singer2Fragment : Fragment() {
         binding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_singer2, container, false)
 
+        val singList = makeSingList()
+
+        val adapter = SingRvAdapter(singList)
+        binding.singerRecyclerView.adapter = adapter
+        binding.singerRecyclerView.layoutManager = LinearLayoutManager(context)
+
         binding.image1.setOnClickListener {
             moveSinger1Fragment(it)
         }
@@ -38,6 +45,31 @@ class Singer2Fragment : Fragment() {
         }
 
         return binding.root
+    }
+
+    private fun makeSingList(): MutableList<String> {
+        val singList = mutableListOf<String>()
+        singList.add("별빛 같은 나의 사랑")
+        singList.add("사랑의 콜센터")
+        singList.add("영웅시대")
+        singList.add("이제 나만 믿어요")
+        singList.add("별빛 같은 나의 사랑")
+        singList.add("사랑의 콜센터")
+        singList.add("영웅시대")
+        singList.add("이제 나만 믿어요")
+        singList.add("별빛 같은 나의 사랑")
+        singList.add("사랑의 콜센터")
+        singList.add("영웅시대")
+        singList.add("이제 나만 믿어요")
+        singList.add("별빛 같은 나의 사랑")
+        singList.add("사랑의 콜센터")
+        singList.add("영웅시대")
+        singList.add("이제 나만 믿어요")
+        singList.add("별빛 같은 나의 사랑")
+        singList.add("사랑의 콜센터")
+        singList.add("영웅시대")
+        singList.add("이제 나만 믿어요")
+        return singList
     }
 
     private fun moveSinger1Fragment(view: View) {

@@ -3,4 +3,7 @@
     <string name="영탁">영탁</string>
     <string name="임영웅">임영웅</string>
     <string name="송가인">송가인</string>
+    <string name="YoungTak_SingList">영탁 노래 리스트</string>
+    <string name="gain_sing_list">송가인 노래 리스트</string>
+    <string name="youngwoong_sing_list">임영웅 노래 리스트</string>
 </resources>
