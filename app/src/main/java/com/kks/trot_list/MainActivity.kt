@@ -2,16 +2,23 @@ package com.kks.trot_list
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.databinding.DataBindingUtil
+import com.kks.trot_list.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private val TAG = "MainActivity"
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        Log.d(TAG, "onAttachedToWindow MainActivity")
+
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Log.d(TAG, "onCreate MainActivity")
 
-        // 1. navigation 만들기
-
-        // 2. Fragment 만들고 네비게이션에 연결하기
-
-        // 3. 리사이클러뷰 연결하기
+        // Databinding 해제 하니 오류가 사라짐
     }
 }
