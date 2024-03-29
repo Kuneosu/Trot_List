@@ -18,6 +18,10 @@ import com.kks.trot_list.databinding.FragmentSinger1Binding
 class Singer1Fragment : Fragment() {
     private val TAG = "Singer1Fragment"
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

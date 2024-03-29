@@ -15,7 +15,7 @@
             android:background="@color/black"
             android:gravity="center"
             android:padding="10dp"
-            android:text="@string/youngwoong_sing_list"
+            android:text="임영웅 노래 리스트"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold"
